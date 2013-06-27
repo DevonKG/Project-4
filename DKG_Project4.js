@@ -56,4 +56,21 @@ function FormatNumber(numberToFormat,precisionDigit)
 console.log(FormatNumber(3.1415926535,4));
 console.log(" ");
 
-//5
+//5.
+function largestNextNumber(theArray,theMagicNumber) {
+
+var numberArray = [1,4,7,9,10,14,15];
+var magicNumber = 5;
+var storedLargeNumber = 1000000;
+for (var i = 0 ; i < numberArray.length ; i++)
+{
+    if (numberArray[i] > magicNumber && numberArray[i] < storedLargeNumber)
+    {
+    storedLargeNumber = numberArray[i];
+    }
+}
+    return storedLargeNumber;
+};
+console.log(largestNextNumber([1,4,7,9,10,14,15],5));
+
+//6
