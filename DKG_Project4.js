@@ -16,6 +16,19 @@ else {
 return false;
 }
 }
-document.write(PhoneNumberFormat("185-252-5766"));
-document.write("<br>");
+console.log(PhoneNumberFormat("185-252-5766"));
+console.log("<br>");
 
+//2.
+function EmailAddressFormat(theEmail)
+{
+    if(theEmail.indexOf("@") < theEmail.lastIndexOf("."))//lastIndexOf allows periods to be used IN the email address
+    {
+        return true;
+    } else 
+    {
+        return false;
+    }
+}
+console.log(EmailAddressFormat("x@y.z"));
+console.log("<br>");
