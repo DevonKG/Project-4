@@ -72,5 +72,12 @@ for (var i = 0 ; i < numberArray.length ; i++)
     return storedLargeNumber;
 };
 console.log(largestNextNumber([1,4,7,9,10,14,15],5));
+console.log(" ");
 
 //6
+function returnNumber(theNumber)
+{
+    var parsedNumber = parseInt(theNumber);
+        return parsedNumber;
+}
+console.log(returnNumber("42"));
