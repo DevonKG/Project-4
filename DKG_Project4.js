@@ -17,7 +17,7 @@ return false;
 }
 }
 console.log(PhoneNumberFormat("185-252-5766"));
-console.log("<br>");
+console.log(" ");
 
 //2.
 function EmailAddressFormat(theEmail)
@@ -31,7 +31,7 @@ function EmailAddressFormat(theEmail)
     }
 }
 console.log(EmailAddressFormat("x@y.z"));
-console.log("<br>");
+console.log(" ");
 
 //3.
 function URLTest(theURL)
@@ -45,4 +45,15 @@ function URLTest(theURL)
     }
 }
 console.log(URLTest("https://www.google.com"));
-console.log("<br>");
+console.log(" ");
+
+//4.
+function FormatNumber(numberToFormat,precisionDigit)
+{
+    var newNum = (numberToFormat.toFixed(numberToFormat,precisionDigit));
+    return newNum;
+}
+console.log(FormatNumber(3.1415926535,4));
+console.log(" ");
+
+//5
