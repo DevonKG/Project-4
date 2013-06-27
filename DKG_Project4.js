@@ -22,7 +22,7 @@ console.log("<br>");
 //2.
 function EmailAddressFormat(theEmail)
 {
-    if(theEmail.indexOf("@") < theEmail.lastIndexOf("."))//lastIndexOf allows periods to be used IN the email address
+    if(theEmail.indexOf("@") < theEmail.lastIndexOf("."))
     {
         return true;
     } else 
@@ -31,4 +31,18 @@ function EmailAddressFormat(theEmail)
     }
 }
 console.log(EmailAddressFormat("x@y.z"));
+console.log("<br>");
+
+//3.
+function URLTest(theURL)
+{
+    if (theURL.slice(0,4)== "http" || theURL.slice(0,5)== "https")
+    {
+        return true;
+    } else
+    {
+        return false;
+    }
+}
+console.log(URLTest("https://www.google.com"));
 console.log("<br>");
